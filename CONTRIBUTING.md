@@ -1,12 +1,14 @@
-# Contributor-Friendly Code of Conduct – Africa Area Data
+# Contributing to Africa Area Data
 
-We welcome all contributors to **Africa Area Data** and aim to create a **friendly, respectful, and collaborative environment**.
+Thank you for your interest in contributing! Here’s how to get started:
 
-### Key Guidelines:
+## Steps to Contribute
+1. Fork the repository.  
+2. Add or update data files in the appropriate zone folder under `data/`.  
+3. Follow the **JSON structure** and include sources.  
+4. Create a pull request (PR) for review.  
 
-* **Be respectful:** Treat others with courtesy and professionalism.
-* **Contribute responsibly:** Ensure data is **accurate, verifiable, and sourced**. Follow the **JSON structure** and include references when possible.
-* **Communicate constructively:** Feedback, discussions, and corrections should be **helpful and polite**.
-* **Report issues:** If you see harassment, inappropriate behavior, or unreliable data, notify a maintainer promptly.
-
-We strive to maintain a **safe, high-quality, and inclusive project** for everyone.
+## Review Process
+- Each PR is reviewed by the **Zone Lead** of the corresponding geographic zone.  
+- The Zone Lead validates the data, JSON structure, and sources before merging.  
+- All modifications must be documented in the commit or `sources.md`.
