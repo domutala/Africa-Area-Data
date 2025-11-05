@@ -1,6 +1,6 @@
 # Africa Area Data
 
-**Africa Area Data** is an **open-source project** that centralizes, structures, and makes accessible **all administrative geographic divisions of Africa**, from countries, regions, and counties to districts, communes, neighborhoods, and villages. All data uses a **single, standardized JSON format** for consistency and ease of use.
+**Africa Area Data** is an **open-source project** that centralizes, structures, and makes accessible **all administrative geographic divisions of Africa**, from countries to regions, departments, communes, neighborhoods, and villages. All data uses a **single, standardized JSON format** for consistency and ease of use.
 
 ---
 
@@ -31,12 +31,11 @@ Every geographic entity uses the same JSON structure. All fields below are optio
 | `coordinates`               | Approximate geographical coordinates (latitude/longitude)                | `{"lat": 14.6928, "lng": -17.4467}`                                |
 | `bounding_box`              | Geographic bounding box (useful for mapping/GIS)                         | `{"north": 14.83, "south": 14.66, "east": -17.35, "west": -17.55}` |
 | `timezone`                  | Time zone                                                                | `"GMT+0"`                                                          |
+| `status`                    | Administrative status (e.g., recognized, proposed, historical)           | `"recognized"`                                                     |
 | `created_at` / `updated_at` | Creation date / last update of the data                                  | `"2025-01-01" / "2025-10-01"`                                      |
 | `links` / `source`          | URL or reference of official source (INS, OCHA, UN, etc.)                | `["https://www.stat-sn.gov.sn/"]`                                  |
 | `notes`                     | Additional information or context (e.g., disputed areas, recent changes) | `"Capital region of Senegal"`                                      |
 | `neighbors`                 | Codes of neighboring zones (useful for geographic analysis)              | `["SN-THI", "SN-RUF"]`                                             |
-
----
 
 ### Example
 
@@ -74,16 +73,43 @@ Every geographic entity uses the same JSON structure. All fields below are optio
 
 ---
 
-## Contribution
+## 🤝 Contribution
 
-Contributions are **welcome from everyone**! You can:
+We welcome contributions from everyone! You can:
 
 * Add or correct data for any country;
 * Improve JSON structures or consistency;
-* Help with documentation and source validation.
+* Ensure **accuracy, verifiability, and source citation** for all data;
+* Help with documentation and validation of sources.
+
+**Guidelines for data contributions:**
+
+* Data must be **accurate and sourced** (INS, OCHA, UN, government sources, etc.).
+* Follow the **standard JSON structure**.
+* Document any modifications clearly.
 
 ---
 
-## Vision
+## Code of Conduct (Summary)
 
-To create **the largest open-source geographic database of the African continent**, reliable, accessible, and interoperable, supporting technological development and territorial knowledge across Africa.
+We aim to create a **friendly, respectful, and collaborative environment**.
+
+* **Be respectful**: treat others courteously.
+* **Contribute responsibly**: ensure data is reliable and sourced.
+* **Communicate constructively**: feedback should be helpful and polite.
+* **Report issues**: notify maintainers of harassment, inappropriate behavior, or unreliable data.
+
+Full Code of Conduct: see [Code of conduct](`CODE_OF_CONDUCT.md`).
+
+---
+
+## License
+
+Africa Area Data is licensed under the **Open Database License (ODbL) 1.0**.
+
+* You are free to **share, adapt, and use commercially**.
+* **Attribution is required**: include “Contains data from Africa Area Data, licensed under ODbL 1.0.”
+* If redistributing the database or derivatives, you must **share under ODbL 1.0**.
+
+Full license: see [`licence`](./LICENCE.md).
+
